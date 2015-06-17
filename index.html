@@ -1,36 +1,16 @@
-<!--@author: Virigineni Venkata Lakshmi Prasanna -->
-<!DOCTYPE html>
-<html ng-app="basicApp">
-	<head>
-		<meta charset="UTF-8">
-		<!-- style files-->
-		<link rel="stylesheet" type="text/css" href="../styles/bootstrap3/bootstrap.less">
+<html>
+<head>
 
-		<!-- angular files -->
-		<script type="text/javascript" src="../vendors/angularjs/angular.min.js"></script>
-		<script type="text/javascript" src="../vendors/angularjs/angular-route.min.js"></script>
-		<script type="text/javascript" src="../vendors/angularjs/angular-resource.min.js"></script>
-		
-
-
-	</head>
-	<body ng-view>
-		<header>
-			Welcome to Prasanna Freelancer site
-		</header>
-			
-		<div >
-			<a href="/#/home">Home </a>
-		</div>
-
-
-		<footer>
-			@All rights reserved : Prasanna Virigineni
-		</footer>
-
-		<!--vendor script files-->
-
-		
-		<script type="text/javascript" src="../vendors/less-1.4.1.min.js"></script>
-	</body>
+</head>
+<body>
+	<div id="main" ng-view>
+	</div>
+	<script type="text/javascript" src="scripts/angular.js"></script>
+	<script type="text/javascript" src="scripts/jquery-2.0.0.js"></script>
+	<script type="text/javascript" src="scripts/angular-route.min.js"></script>
+	<script type="text/javascript" src="scripts/angular-resource.js"></script>
+	<script type="text/javascript" src="scripts/angular-cookies.js"></script>
+	<script type="text/javascript" src="scripts/angular-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/require.js"  data-main="scripts/appBootstrap.js"></script>
+</body>
 </html>
